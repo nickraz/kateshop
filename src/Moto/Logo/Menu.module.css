@@ -1,0 +1,19 @@
+.menu {
+    font-family: 'Nunito';
+    padding-top: 10px;
+}
+
+.menu div a {
+    color: #3f3f4d;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.menu div a:hover {
+    text-decoration: none;
+    border-bottom: 1px dashed #3f3f4d;
+}
+
+.menu div a i {
+    margin-right: 5px;
+}
