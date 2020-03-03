@@ -4,6 +4,7 @@ import './App.css';
 import Top from './Top/Top.jsx'
 import Moto from './Moto/Moto.jsx'
 import Intro from './Intro/Intro';
+import Content from './Content/Content';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Top />
       <Moto />
       <Intro />
+      <Content header="Популярные товары"/>
     </div>
   );
 }
