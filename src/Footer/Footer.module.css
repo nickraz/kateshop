@@ -1,0 +1,35 @@
+.footer {
+    padding-top: 25px;
+}
+
+.footer h4 {
+    font-weight: 700;
+    color: #3f3f4d;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer div {
+    text-align: left;
+}
+
+.footer div a {
+    color: #3f3f4d;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.footer div a:hover {
+    color: #f4b956;
+    text-decoration: none;
+}
+
+.phone a {
+    font-size: 25px;
+    text-decoration: none;
+}

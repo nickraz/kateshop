@@ -12,7 +12,7 @@ const Item = (props) => {
                     <span className={css.cost}>{props.cost}</span>
                     {props.oldcost && <span className={css.oldcost}> {props.oldcost} </span>} 
                 </p>
-                <a className={css.addtocart} href="#">В корзину</a>
+                <span className={css.addtocart}>В корзину</span>
             </div>
         </div>
     );

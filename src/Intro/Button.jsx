@@ -3,7 +3,7 @@ import css from './Button.module.css';
 
 const Button = () => {
     return (
-        <a href="#" className={css.href}>Заказать букет</a>
+        <span className={css.href}>Заказать букет</span>
     );
 }
 

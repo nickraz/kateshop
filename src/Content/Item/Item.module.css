@@ -1,5 +1,5 @@
 .item {
-    margin-top: 65px;
+    margin-top: 75px;
 }
 
 .item img {
@@ -59,17 +59,18 @@ p.costs {
 }
 
 .addtocart {
-    /* border: 1px solid #f66875; */
     background: #f66875;
     border-radius: 15px;
     color: white;
     text-decoration: none;
     font-size: 15px;
     padding: 7px 15px;
+    transition: background-color 0.3s;
 }
 
 .addtocart:hover {
     text-decoration: none;
     color: white;
     background: #f4b956;
+    cursor: pointer;
 }

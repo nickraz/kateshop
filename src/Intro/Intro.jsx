@@ -8,10 +8,10 @@ const Intro = () => {
             <div className="col-sm-6">
                 <h1 className={css.bigwhite}>Магазин цветов Махачкала</h1>
                 <p className={css.subtitle}>Доставка цветов и букетов</p>
-                <h3 className={css.smallwhite}>
+                <h2 className={css.smallwhite}>
                     Цветочный интернет-магазин на Первомайской, 172. Доставка цветов в Пятигорске, Ессентуках, Железноводске, по КавМинВодам.
-                </h3>
-                <br/>
+                </h2>
+                <br />
                 <Button />
             </div>
         </div>

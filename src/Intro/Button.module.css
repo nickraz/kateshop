@@ -9,9 +9,9 @@
 }
 
 .href:hover {
-    color:white;
     text-decoration: none;
     background: white;
     transition: background-color 0.5s, color 0.5s;
     color: #c3306b;
+    cursor: pointer;
 }
