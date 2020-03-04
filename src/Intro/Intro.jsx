@@ -4,7 +4,7 @@ import css from './Intro.module.css';
 
 const Intro = () => {
     return (
-        <div class={`container ${css.intro}`} data-container="container">
+        <div className={`container ${css.intro}`} data-container="container">
             <div className="col-sm-6">
                 <h1 className={css.bigwhite}>Магазин цветов Махачкала</h1>
                 <p className={css.subtitle}>Доставка цветов и букетов</p>

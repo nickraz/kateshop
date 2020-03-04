@@ -1,5 +1,4 @@
 import React from 'react';
-import css from './Subfooter.module.css';
 
 const Subfooter = () => {
     return (
