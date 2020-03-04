@@ -24,6 +24,7 @@ const Footer = () => {
             <div className="col-sm-3">
                 <h4>Социальные сети</h4>
                 <p><a href="https://www.instagram.com/m.m_flowers_05/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> m.m_flowers_05</a></p>
+                <p><a href="https://www.facebook.com/m.m.flowers05/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> m.m_flowers_05</a></p>
             </div>
         </div>
     );
