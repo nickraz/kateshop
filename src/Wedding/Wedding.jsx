@@ -1,21 +1,31 @@
 import React from 'react';
 import css from './Wedding.module.css';
+import axios from 'axios';
+import URLs from '../URLs';
 
-const Wedding = () => {
-    return (
-        <div className={`container ${css.wedding}`} data-container="container">
-            <div className={`container ${css.content}`} data-container="container">
-                <h2>Свадебные букеты</h2>
-                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
-                <p>Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
-                <p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.</p>
-                <p>Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.</p>
-                <p>Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
-                <p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить</p>
-            </div>
+class Wedding extends React.Component {
 
-        </div>
-    );
+    componentDidMount() {
+        axios.get(`${URLs.Server}/flower/api/wedding`)
+            .then((response) => {
+                this.setState({ header: response.data.header, text: response.data.text });
+            });
+    }
+
+    render() {
+        if (this.state) {
+            return (
+                <div className={`container ${css.wedding}`} data-container="container">
+                    <div className={`container ${css.content}`} data-container="container">
+                        <h2>{this.state.header}</h2>
+                        <p>{this.state.text}</p>
+                    </div>
+
+                </div>
+            );
+        }
+        return null;
+    }
 }
 
 export default Wedding;
